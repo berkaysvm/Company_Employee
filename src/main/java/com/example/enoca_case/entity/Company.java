@@ -19,6 +19,6 @@ public class Company {
     private  int company_no;
     private String company_name;
 
-    @OneToMany(mappedBy = "company",fetch = FetchType.EAGER,cascade = CascadeType.ALL )
+    @OneToMany(mappedBy = "company",fetch = FetchType.LAZY,cascade = CascadeType.ALL )
     private List<Employee> employees;
 }

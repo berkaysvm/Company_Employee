@@ -29,6 +29,7 @@ public class EmployeeMapper {
                 .name(employee.getName())
                 .lastname(employee.getLastname())
                 .age(employee.getAge())
+                .companDto(companyMapper.mapGetEmpl(employee.getCompany()))
                 .build();
     }
     public List<EmployeeDto> mapList(List<Employee> employeeList)

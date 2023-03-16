@@ -16,7 +16,7 @@ public class Employee {
     private String name;
     private String lastname;
     private int age;
-    @ManyToOne(cascade =CascadeType.MERGE,fetch = FetchType.LAZY,targetEntity = com.example.enoca_case.entity.Company.class)
+    @ManyToOne(cascade =CascadeType.MERGE,fetch = FetchType.EAGER,targetEntity = com.example.enoca_case.entity.Company.class)
     @JoinColumn(name = "company_id")
     private Company company;
 }

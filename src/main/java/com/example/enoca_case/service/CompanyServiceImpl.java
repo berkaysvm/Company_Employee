@@ -27,7 +27,9 @@ public class CompanyServiceImpl implements CompanyService {
     }
 
     @Override
-    public CompanyDto get(Integer id) {
+    public CompanyDto get(Integer id){
+
+
         return companyMapper.map(companyRepository.getReferenceById(id));
 
     }
